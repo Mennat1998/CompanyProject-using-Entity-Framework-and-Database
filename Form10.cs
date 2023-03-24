@@ -29,13 +29,6 @@ namespace CompanyProject
                 comboBox1.Items.Add(st);
             }
 
-            var moveid = (from id in EF.Move_Of_Products
-                          select id.Move_Of_Products_id);
-
-            foreach (int id in moveid)
-            {
-                comboBox2.Items.Add(id);
-            }
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -43,6 +36,8 @@ namespace CompanyProject
             listView1.Items.Clear();
             listView2.Items.Clear();
             listView3.Items.Clear();
+            listView4.Items.Clear();
+            listView5.Items.Clear();
             textBox1.Text = textBox2.Text = textBox3.Text = textBox4.Text = "";
 
             string selectedproduct = comboBox1.SelectedItem.ToString();
@@ -65,44 +60,19 @@ namespace CompanyProject
                 listView1.Items.Add(id.store_id_FK.ToString());
                 listView2.Items.Add(id.quantity_of_product.ToString());
                 listView3.Items.Add(id.Dateofinsertinstore.ToString());
+                if (!textBox5.Text.Equals("") && !textBox6.Text.Equals(""))
+                {
+                    DateTime fromdate = DateTime.Parse(textBox5.Text);
+                    DateTime todate = DateTime.Parse(textBox6.Text);
+                    if (id.Dateofinsertinstore > fromdate && id.Dateofinsertinstore < todate)
+                    {
+                        listView5.Items.Add(id.store_id_FK.ToString());
+                        listView4.Items.Add(id.quantity_of_product.ToString());
+                    }
+                }
             }
         }
 
-        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            int moveid = int.Parse(comboBox2.SelectedItem.ToString());
-            var movetable = (from id in EF.Move_Of_Products
-                             where id.Move_Of_Products_id == moveid
-                             select id);
-
-            var idproduct = (from id in EF.Move_Of_Products
-                             where id.Move_Of_Products_id == moveid
-                             select id.Product_id_FK).FirstOrDefault();
-
-            var productname = (from id in EF.products
-                               where id.product_id == idproduct
-                               select id.product_name).FirstOrDefault();
-
-            var idsupp = (from id in EF.Move_Of_Products
-                          where id.Move_Of_Products_id == moveid
-                          select id.supplier_id_Fk).FirstOrDefault();
-
-            var subbname = (from id in EF.suppliers
-                            where id.Supp_id == idsupp
-                            select id.Supp_name).FirstOrDefault();
-
-            foreach (var item in movetable)
-            {
-                textBox5.Text = item.from_store_id.ToString();
-                textBox6.Text = item.to_store_id.ToString();
-                textBox7.Text = productname;
-                textBox8.Text = item.quantity_of_product.ToString();
-                textBox9.Text = subbname;
-                textBox10.Text = item.product_production_date.ToString();
-                textBox11.Text = item.product_Expire_date.ToString();
-                textBox12.Text = item.DateofMove.ToString();
-
-            }
-        }
+           
     }
 }

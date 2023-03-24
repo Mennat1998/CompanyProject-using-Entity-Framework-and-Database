@@ -37,5 +37,11 @@ namespace CompanyProject2
             Form11 report3 = new Form11();
             report3.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form12 report4 = new Form12();
+            report4.ShowDialog();
+        }
     }
 }

@@ -38,12 +38,15 @@ namespace CompanyProject
                 listView1.Items.Add(i.product_id_FK.ToString());
                 listView2.Items.Add(i.store_id_FK.ToString());
                 listView3.Items.Add(i.Dateofinsertinstore.ToString());
-              /*  var date = i.Dateofinsertinstore;
+            }
+            var dateproductstore = from prosto in EF.store_Product select prosto.Dateofinsertinstore;
+            foreach(var i in dateproductstore)
+            {
                 var today = DateTime.Now;
-                var diffOfDates = today.Subtract(date);
-                var month = diffOfDates.Days / (365 / 12);
+                var diffOfDates = today.Subtract((DateTime)i);
+                var month = diffOfDates.Days;
 
-                listView4.Items.Add(month.ToString());*/
+                listView4.Items.Add(month.ToString());
             }
         }
 

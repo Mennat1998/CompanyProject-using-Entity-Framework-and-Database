@@ -75,20 +75,30 @@ namespace CompanyProject
 
             int id = int.Parse(textBox1.Text);
             var MP = (from m in EF.Move_Of_Products where m.Move_Of_Products_id == MOF.Move_Of_Products_id select m).FirstOrDefault();
-            if (MP == null)
+            int quantity = getstore_product.quantity_of_product - int.Parse(textBox4.Text);
+            if (MP == null && quantity>0)
             {
                 EF.Move_Of_Products.Add(MOF);
                 EF.SaveChanges();
                 EF.store_Product.Add(newstore_product);
                 EF.SaveChanges();
-                int quantity = getstore_product.quantity_of_product - int.Parse(textBox4.Text);
                 getstore_product.store_id_FK = storeid1;
                 getstore_product.product_id_FK = IDproduct;
-
                 getstore_product.quantity_of_product = quantity;
+              
 
                 EF.SaveChanges();
                 MessageBox.Show("Transfered");
+            }
+            else if (MP == null && quantity == 0)
+            {
+                EF.Move_Of_Products.Add(MOF);
+                EF.SaveChanges();
+                EF.store_Product.Add(newstore_product);
+                EF.SaveChanges();
+                EF.store_Product.Remove(getstore_product);
+                EF.SaveChanges();
+
             }
             else
             {

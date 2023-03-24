@@ -53,7 +53,7 @@
             this.listView4.HideSelection = false;
             this.listView4.Location = new System.Drawing.Point(613, 92);
             this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(128, 151);
+            this.listView4.Size = new System.Drawing.Size(99, 267);
             this.listView4.TabIndex = 47;
             this.listView4.UseCompatibleStateImageBehavior = false;
             // 
@@ -62,7 +62,7 @@
             this.listView3.HideSelection = false;
             this.listView3.Location = new System.Drawing.Point(407, 92);
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(169, 151);
+            this.listView3.Size = new System.Drawing.Size(116, 275);
             this.listView3.TabIndex = 46;
             this.listView3.UseCompatibleStateImageBehavior = false;
             // 
@@ -71,7 +71,7 @@
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(213, 92);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(108, 151);
+            this.listView2.Size = new System.Drawing.Size(108, 275);
             this.listView2.TabIndex = 45;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
@@ -80,7 +80,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(51, 92);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(111, 151);
+            this.listView1.Size = new System.Drawing.Size(111, 275);
             this.listView1.TabIndex = 44;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -98,9 +98,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(596, 73);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(162, 16);
+            this.label8.Size = new System.Drawing.Size(151, 16);
             this.label8.TabIndex = 42;
-            this.label8.Text = "Stored in Store (in months)";
+            this.label8.Text = "Stored in Store (in Days)";
             // 
             // label6
             // 
@@ -122,21 +122,21 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(256, 410);
+            this.textBox3.Location = new System.Drawing.Point(245, 534);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(249, 22);
             this.textBox3.TabIndex = 39;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(256, 372);
+            this.textBox2.Location = new System.Drawing.Point(245, 496);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(249, 22);
             this.textBox2.TabIndex = 38;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(256, 337);
+            this.textBox1.Location = new System.Drawing.Point(245, 461);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(249, 22);
             this.textBox1.TabIndex = 37;
@@ -144,7 +144,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 410);
+            this.label4.Location = new System.Drawing.Point(33, 534);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 16);
             this.label4.TabIndex = 36;
@@ -153,7 +153,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 378);
+            this.label3.Location = new System.Drawing.Point(37, 502);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 16);
             this.label3.TabIndex = 35;
@@ -162,7 +162,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 343);
+            this.label2.Location = new System.Drawing.Point(37, 467);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 16);
             this.label2.TabIndex = 34;
@@ -171,7 +171,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(256, 297);
+            this.comboBox1.Location = new System.Drawing.Point(245, 421);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(249, 24);
             this.comboBox1.TabIndex = 33;
@@ -180,7 +180,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 305);
+            this.label1.Location = new System.Drawing.Point(37, 429);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 16);
             this.label1.TabIndex = 32;
@@ -200,7 +200,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(42, 246);
+            this.label7.Location = new System.Drawing.Point(31, 370);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(419, 29);
@@ -211,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1028, 576);
             this.Controls.Add(this.listView4);
             this.Controls.Add(this.listView3);
             this.Controls.Add(this.listView2);
