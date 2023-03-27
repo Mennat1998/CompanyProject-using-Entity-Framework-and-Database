@@ -40,7 +40,7 @@ namespace CompanyProject
                 listView3.Items.Add(i.Dateofinsertinstore.ToString());
             }
             var dateproductstore = from prosto in EF.store_Product select prosto.Dateofinsertinstore;
-            foreach(var i in dateproductstore)
+            foreach (var i in dateproductstore)
             {
                 var today = DateTime.Now;
                 var diffOfDates = today.Subtract((DateTime)i);
@@ -65,6 +65,25 @@ namespace CompanyProject
             var diffOfDates = Dateofexpired - Dateofproduction;
             var month = (diffOfDates.Days) / (365 / 12);
             textBox3.Text = month.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var val = int.Parse(textBox4.Text);
+            if (!textBox4.Text.Equals(""))
+            {
+
+                var products = (from pro in EF.products
+                                select pro);
+                foreach (var i in products)
+                {
+                    if (i.validationperiod <= val)
+                    {
+                        comboBox2.Items.Add(i.product_name);
+                    }
+                }
+
+            }
         }
     }
 }

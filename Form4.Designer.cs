@@ -46,6 +46,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label8
@@ -198,11 +200,32 @@
             this.textBox2.Size = new System.Drawing.Size(193, 22);
             this.textBox2.TabIndex = 41;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(35, 34);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(364, 16);
+            this.label22.TabIndex = 127;
+            this.label22.Text = "For any Date entered please insert month then day then year";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(61, 9);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 25);
+            this.label21.TabIndex = 126;
+            this.label21.Text = "Note";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -249,5 +272,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
     }
 }

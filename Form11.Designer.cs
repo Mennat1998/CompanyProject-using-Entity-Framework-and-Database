@@ -46,12 +46,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listView4
             // 
             this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(613, 92);
+            this.listView4.Location = new System.Drawing.Point(617, 71);
             this.listView4.Name = "listView4";
             this.listView4.Size = new System.Drawing.Size(99, 267);
             this.listView4.TabIndex = 47;
@@ -60,7 +67,7 @@
             // listView3
             // 
             this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(407, 92);
+            this.listView3.Location = new System.Drawing.Point(411, 71);
             this.listView3.Name = "listView3";
             this.listView3.Size = new System.Drawing.Size(116, 275);
             this.listView3.TabIndex = 46;
@@ -69,7 +76,7 @@
             // listView2
             // 
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(213, 92);
+            this.listView2.Location = new System.Drawing.Point(217, 71);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(108, 275);
             this.listView2.TabIndex = 45;
@@ -78,7 +85,7 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(51, 92);
+            this.listView1.Location = new System.Drawing.Point(55, 71);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(111, 275);
             this.listView1.TabIndex = 44;
@@ -87,7 +94,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(228, 73);
+            this.label10.Location = new System.Drawing.Point(232, 52);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 16);
             this.label10.TabIndex = 43;
@@ -96,7 +103,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(596, 73);
+            this.label8.Location = new System.Drawing.Point(600, 52);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(151, 16);
             this.label8.TabIndex = 42;
@@ -105,7 +112,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(417, 73);
+            this.label6.Location = new System.Drawing.Point(421, 52);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 16);
             this.label6.TabIndex = 41;
@@ -114,7 +121,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 73);
+            this.label5.Location = new System.Drawing.Point(70, 52);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 16);
             this.label5.TabIndex = 40;
@@ -207,11 +214,80 @@
             this.label7.TabIndex = 30;
             this.label7.Text = "Report about products Expire date ";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(561, 380);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(117, 16);
+            this.label11.TabIndex = 48;
+            this.label11.Text = "Insert no of months";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(711, 377);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(222, 22);
+            this.textBox4.TabIndex = 49;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(522, 461);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(211, 16);
+            this.label12.TabIndex = 50;
+            this.label12.Text = "Products with this validation period";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(739, 461);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(194, 24);
+            this.comboBox2.TabIndex = 51;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(600, 412);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 40);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "show products";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(599, 527);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(364, 16);
+            this.label22.TabIndex = 127;
+            this.label22.Text = "For any Date entered please insert month then day then year";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(625, 502);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 25);
+            this.label21.TabIndex = 126;
+            this.label21.Text = "Note";
+            // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 576);
+            this.ClientSize = new System.Drawing.Size(1004, 576);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.listView4);
             this.Controls.Add(this.listView3);
             this.Controls.Add(this.listView2);
@@ -258,5 +334,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
     }
 }

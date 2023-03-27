@@ -53,6 +53,8 @@
             this.listView4 = new System.Windows.Forms.ListView();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label8
@@ -170,7 +172,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 150);
+            this.label1.Location = new System.Drawing.Point(27, 221);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 25);
             this.label1.TabIndex = 44;
@@ -179,7 +181,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(252, 151);
+            this.comboBox1.Location = new System.Drawing.Point(267, 222);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(207, 24);
             this.comboBox1.TabIndex = 43;
@@ -205,14 +207,14 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(171, 78);
+            this.textBox6.Location = new System.Drawing.Point(186, 149);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(231, 22);
             this.textBox6.TabIndex = 88;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(171, 35);
+            this.textBox5.Location = new System.Drawing.Point(186, 106);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(230, 22);
             this.textBox5.TabIndex = 87;
@@ -256,7 +258,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(59, 38);
+            this.label10.Location = new System.Drawing.Point(74, 109);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(70, 16);
             this.label10.TabIndex = 82;
@@ -265,17 +267,38 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(62, 78);
+            this.label9.Location = new System.Drawing.Point(77, 149);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(56, 16);
             this.label9.TabIndex = 81;
             this.label9.Text = "To Date";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(54, 46);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(364, 16);
+            this.label22.TabIndex = 127;
+            this.label22.Text = "For any Date entered please insert month then day then year";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(80, 21);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 25);
+            this.label21.TabIndex = 126;
+            this.label21.Text = "Note";
             // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 537);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label12);
@@ -335,5 +358,7 @@
         private System.Windows.Forms.ListView listView4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
     }
 }

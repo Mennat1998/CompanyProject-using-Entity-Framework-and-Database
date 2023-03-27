@@ -45,6 +45,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -191,11 +193,32 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "From Store : ";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(11, 34);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(364, 16);
+            this.label22.TabIndex = 127;
+            this.label22.Text = "For any Date entered please insert month then day then year";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(37, 9);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 25);
+            this.label21.TabIndex = 126;
+            this.label21.Text = "Note";
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.comboBox4);
@@ -240,5 +263,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
     }
 }
