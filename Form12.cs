@@ -35,7 +35,8 @@ namespace CompanyProject2
             var movetable = (from id in EF.Move_Of_Products
                              where id.Move_Of_Products_id == moveid
                              select id);
-
+            var table = (from id in EF.Move_Of_Products
+                         select id);
             var idproduct = (from id in EF.Move_Of_Products
                              where id.Move_Of_Products_id == moveid
                              select id.Product_id_FK).FirstOrDefault();
@@ -62,7 +63,42 @@ namespace CompanyProject2
                 textBox10.Text = item.product_production_date.ToString();
                 textBox11.Text = item.product_Expire_date.ToString();
                 textBox12.Text = item.DateofMove.ToString();
+             
 
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            listView2.Items.Clear();
+            listView3.Items.Clear();
+            listView4.Items.Clear();
+            listView5.Items.Clear();
+            listView6.Items.Clear();
+            listView7.Items.Clear();
+            listView8.Items.Clear();
+            var table = (from id in EF.Move_Of_Products
+                         select id);
+            if (!textBox2.Text.Equals("") && !textBox1.Text.Equals(""))
+            {
+                foreach (var i in table)
+                {
+                    DateTime fromdate = DateTime.Parse(textBox2.Text);
+                    DateTime todate = DateTime.Parse(textBox1.Text);
+                    if (i.DateofMove > fromdate && i.DateofMove < todate)
+                    {
+                        listView1.Items.Add(i.from_store_id.ToString());
+                        listView2.Items.Add(i.to_store_id.ToString());
+                        listView3.Items.Add(i.Product_id_FK.ToString());
+                        listView4.Items.Add(i.quantity_of_product.ToString());
+                        listView5.Items.Add(i.supplier_id_Fk.ToString());
+                        listView6.Items.Add(i.product_production_date.ToString());
+                        listView7.Items.Add(i.product_Expire_date.ToString());
+                        listView8.Items.Add(i.DateofMove.ToString());
+                    }
+                }
             }
         }
     }
